@@ -1,9 +1,10 @@
-const navEl = document.querySelectorAll('.item');
-// console.log(navEl)
-const numberOfCategories = navEl.length
-console.log("Number of categories:", numberOfCategories)
+const refs = {
+  item: document.querySelectorAll(".item"),
+  heading: document.querySelectorAll(".item h2"),
+}
+const summ = `Number of categories: ${refs.item.length}`;
+console.log(summ);
 
-const tagsH = document.querySelector('.hero-title-one');
-console.log('Category:', tagsH.textContent)
-
-const value = do
+const categories = refs.heading.forEach(element => 
+  console.log (`Category: ${element.textContent}
+Elements: ${element.nextElementSibling.children.length}`));
